@@ -9,8 +9,8 @@ function isPrime($number){
            return false;
         }
 
-   return true;     
     }
+   return true;     
 }
 $resulting = isPrime(1);
 
