@@ -18,7 +18,7 @@ if($resulting){
     echo "its is prime number";
 }
 else{
-    echo "its is composite";
+    echo "its is composite or Not prime";
 }
 
 
