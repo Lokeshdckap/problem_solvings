@@ -15,12 +15,22 @@ function isPrime($number){
 $resulting = isPrime(1);
 
 if($resulting){
-    echo "its is prime number";
+    // echo "its is prime number";
 }
 else{
-    echo "its is composite or Not prime";
+    // echo "its is composite or Not prime";
 }
 
+// Problem to Write a program to find no of days between two dates in Php?
 
-
-
+$start = (string)readline('Enter your start date: ');
+$end = (string)readline('Enter your end date: ');
+if($start == $end){
+  echo "You Calculate the today to today but your output is 0";
+}
+else{
+  $oldDate = strtotime($start);
+  $currentDate = strtotime($end);
+  $Days  = ($currentDate - $oldDate)/86400;
+  echo abs($Days) ."Days";
+  }
