@@ -23,8 +23,8 @@ else{
 
 // Problem to Write a program to find no of days between two dates in Php?
 
-$start = (string)readline('Enter your start date: ');
-$end = (string)readline('Enter your end date: ');
+$start = (string)readline('Enter your start date(mm/dd/yyyy): ');
+$end = (string)readline('Enter your end date(mm/dd/yyyy): ');
 if($start == $end){
   echo "You Calculate the today to today but your output is 0";
 }
