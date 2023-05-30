@@ -35,6 +35,7 @@ else{
 //   }
 
 // Problem No - 3;
+// Method -1
 function reverseNumbers($st){
 $str = str_split($st);
   for($i=count($str)-1;$i>=0;$i--){
@@ -43,7 +44,7 @@ $str = str_split($st);
 }
 
 reverseNumbers(23456);
-
+// Method - 2
 function reverseNumber($input){
   $num=0;
   while($input>1){
@@ -54,6 +55,62 @@ function reverseNumber($input){
   return $num;
 }
 reverseNumber(23456);
+
+// problem 4
+// Palindrome problem
+function reverseStr($input){
+    for($i = strlen($input) - 1; $i >= 0; $i--)
+    {
+      echo $input[$i];
+    }
+}
+reverseStr('malayalam');
+
+// problem 5
+
+// Fibnoacci serises
+
+function fibonacci($input){
+  $num1 = 0;
+  $num2 = 1;
+  for($i=0;$i<$input;$i++){
+    $result = $num1 + $num2;
+    $num1 = $num2;
+    $num2 = $result;
+  
+    echo $result."\n";
+  }
+}
+fibonacci(5);
+
+// problem -6
+
+// Swap  element
+
+$a = 5;
+$b = 8;
+$a = $a + $b;
+
+$b = $a - $b;
+$a = $a - $b;
+
+echo $a."\n";
+echo $b."\n";
+
+// problem - 7
+// area of trainagle;
+$b = 3;
+$h = 8;
+$areaOfTrainagle = ($b*$h)/2; 
+echo $areaOfTrainagle."\n";
+
+
+
+
+
+
+
+
 
 
 
