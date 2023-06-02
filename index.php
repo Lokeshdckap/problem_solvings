@@ -106,14 +106,66 @@ echo $areaOfTrainagle."\n";
 
 
 
+function sortInteger($numbers){
 
+  // Asscending
+  sort($numbers);
+ print_r($numbers);
 
+ // Decending
+ rsort($numbers);
+ print_r($numbers);
+}
+sortInteger([1,4,5,2,3]);
 
+// You have two arrays like the following. One contains field labels, the other contains field values. Write a php program to output the third array.
 
+// $keys = array(
+//   "field1"=>"first",
+//   "field2"=>"second",
+//   "field3"=>"third"
+// );
+// $values = array(
+//   "field1value"=>"dinosaur",
+//   "field2value"=>"pig",
+//   "field3value"=>"platypus"
+// );
+// // want to output
+// $keysAndValues = array(
+//   "first"=>"dinosaur",
+//   "second"=>"pig",
+//   "third"=>"platypus"
+// );
 
+function combine($key,$value){
+  $result = [];
+  $res = [];
+  $final = [];
+   foreach($key as $keys){
+      array_push($result,$keys);
+   }
 
+   foreach ($value as $values){
+    array_push($res,$values);
+   }
+   
 
+   for($i=0;$i<count($result);$i++){
+       $final[$result[$i]] = $res[$i];
+   }
+  return $final;
+}
 
+print_r(combine(array(
+  "field1"=>"first",
+  "field2"=>"second",
+  "field3"=>"third"
+),
+array(
+  "field1value"=>"dinosaur",
+  "field2value"=>"pig",
+  "field3value"=>"platypus"
+)));
 
 
 
