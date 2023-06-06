@@ -179,7 +179,15 @@ else{
   echo "Array is not empty";
 }
 
+// table
 
+function tables($n){
+for($i=1;$i<=10;$i++){
+    echo $i."*".$n."=".$i * $n."\n";
+}
+}
+
+echo tables(5);
 
 
 
