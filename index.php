@@ -168,6 +168,19 @@ array(
 )));
 
 
+// array empty 
+
+$array  = [1,2,3];
+
+if(empty($array)){
+  echo "Array is a empty";
+}
+else{
+  echo "Array is not empty";
+}
+
+
+
 
 
 
